@@ -1,12 +1,7 @@
 import { Button, Flex, Stack } from "@chakra-ui/react";
 import { Input } from "../components/Form/Input";
-import { SubmitHandler, useForm } from "react-hook-form";
-import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
 import { FormEvent, useContext, useState } from "react";
 import { AuthContext } from "../contexts/AuthContext";
-import { api } from "../services/api";
-import { GetServerSideProps } from "next";
 import { withSSRGuest } from "../utils/withSSRGuest";
 
 type SignInFormData = {
